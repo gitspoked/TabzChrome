@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 For older versions (1.2.x, 1.1.x, 1.0.x, and pre-public 2.x), see [CHANGELOG-archive.md](CHANGELOG-archive.md).
 
+## [1.6.2] - 2026-08-24
+
+### Security
+
+- **Dependency updates via `npm audit fix`** — patched 14 vulnerabilities (3 critical, 10 high) in transitive dependencies: `ws` (memory disclosure, DoS), `undici` (HTTP smuggling/injection), `vitest`/`@vitest/ui` (arbitrary file read via UI server), `tmp` (path traversal), `yaml` (stack overflow), and others. No breaking changes; all 946 tests pass. Remaining moderate `esbuild`/`vite` advisory affects the dev server only and requires a Vite 8 major upgrade (deferred).
+
 ## [1.6.1] - 2026-07-04
 
 ### Added
